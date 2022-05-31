@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+
+    <!-- <script src="app.js"></script> -->
+
+  </head>
+  <body>
+    <div class="Main-Dashboard">
+      <div class="sidebar">
+        <div class="logo">
+          <img
+            src="https://htmlstream.com/preview/front-dashboard-v2.0/assets/svg/logos/logo.svg"
+            alt=""
+          />
+        </div>
+        <div class="home-box">
+          <ul>
+            <li class="home-icon-box">
+              <div class="icon-box">
+                <i class="fa-solid fa-house-user"></i>
+              </div>
+              <div class="home-item-text">Dashboard
+          
+              </div>
+            </li>
+            <li class="dropdown" >
+              <ul>
+                <li>Default</li>
+                <li>Alternative</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="Side-Pages">
+          <h5>PAGES</h5>
+          <ul>
+            <li class="users-info">
+              <div>
+                <i class="fa-solid fa-user-group"></i>
+              </div>
+              <div class="users-text">Users</div>
+            </li class="dropdown">
+            <ul>
+              <li>Overview</li>
+              <li>LeaderBoard</li>
+              <li>Add User</li>
+            </ul>
+          
+            <li class="users-info">
+              <div>
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="user-text">User Profile</div>
+            </li>
+            <ul>
+              <li>Profile</li>
+              <li>Team</li>
+              <li>Project</li>
+              <li>Connection</li>
+              <li>My profile</li>
+            </ul>
+            <li class="users-info">
+              <div>
+                <i class="fa-solid fa-file-invoice"></i>
+              </div>
+              <div class="users-text">Accounts</div>
+            </li>
+            <ul>
+              <li>Setting</li>
+              <li>Billing</li>
+              <li>Invoice</li>
+            </ul>
+
+            <li class="users-info">
+              <div>
+                <i class="fa-solid fa-at"></i>
+              </div>
+              <div class="users-text">Ecommerce</div>
+            </li>
+            <ul>
+              <li>Overview</li>
+              <li>Product</li>
+              <li>Orders</li>
+              <li>Customers</li>
+              <li>Referalls</li>
+              <li>Manage Overview</li>
+              <li>Checkout</li>
+            </ul>
+            <li class="users-info">
+              <div>
+                <i class="fa-solid fa-list-check"></i>
+              </div>
+              <div class="users-text">Projects</div>
+            </li>
+            <ul>
+              <li>Overview</li>
+              <li>Timeline</li>
+            </ul>
+            <li class="users-info">
+              <div>
+                <i class="fa-solid fa-bars-progress"></i>
+              </div>
+              <div class="users-text">Project</div>
+            </li>
+            <ul>
+              <li>Overview</li>
+              <li>Files</li>
+              <li>Activity</li>
+              <li>Teams</li>
+              <li>Settings</li>
+            </ul>
+            <li class="users-info">
+              <div>
+                <i class="fa-solid fa-shield"></i>
+              </div>
+              <div class="users-text">Authentication</div>
+            </li>
+            <ul>
+              <li>Login</li>
+              <li>Signup</li>
+              <li>Reset Pasword</li>
+              <li>Email Verification</li>
+              <li>Welcome Message</li>
+              <li>Error 400</li>
+              <li>Error 500</li>
+            </ul>
+            <li class="users-info">
+              <div>
+                <i class="fa-solid fa-key"></i>
+              </div>
+              <div class="users-text">Api Keys</div>
+            </li>
+            <li>Welcome Page</li>
+            <li>Landing Page</li>
+          </ul>
+        </div>
+        <div class="Apps">
+          <h5>APPS</h5>
+          <ul>
+            <li class="users-info">
+              <div>
+                <i class="fa-thin fa-file-arrow-down"></i>
+              </div>
+              <div class="users-text">Kanban</div>
+            </li>
+
+            <li class="users-info">
+              <div>
+                <i class="fa-solid fa-calendar-days"></i>
+              </div>
+              <div class="users-text">Calender</div>
+            </li>
+
+            <li class="users-info">
+              <div>
+                <i class="fa-solid fa-file-invoice"></i>
+              </div>
+              <div class="users-text">Invoice Generator</div>
+            </li>
+
+            <li class="users-info">
+              <div><i class="fa-solid fa-file"></i></div>
+              <div class="users-text">File Manager</div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5>LAYOUTS</h5>
+          <ul>
+            <li class="users-info">
+              <i class="fa-solid fa-table-columns"></i>
+              <div class="users-text">Layouts</div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5>Documentation</h5>
+          <ul>
+            <li class="users-info">
+              <i class="fa-solid fa-book"></i>
+              <div class="users-text">Documentation</div>
+            </li>
+            <li class="users-info">
+              <i class="fa-solid fa-layer-group"></i>
+              <div class="users-text">Components</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="Main-Bar">
+        <div class="header">
+          <div class="search">
+            <input
+              class="Search-Btn"
+              type="text"
+              name="Search Bar"
+              placeholder="Search in Front"
+            />
+          </div>
+          <div class="list-item">
+            <li class="child-list-item">
+              <i class="fa-solid fa-bell"></i>
+            </li>
+            <li class="child-list-item">
+              <i class="fa-brands fa-intercom"></i>
+            </li>
+            <li class="child-list-item">
+              <i class="fa-solid fa-diamond"></i>
+            </li>
+            <li class="child-list-item">
+              <img
+                class="profile-img"
+                src="https://htmlstream.com/preview/front-dashboard-v2.0/assets/img/160x160/img6.jpg"
+                alt=""
+                width="38.5px"
+                height="38.5px"
+              />
+            </li>
+          </div>
+        </div>
+        <div class="Dashboard">
+          <div>
+            <h2>Dashboard</h2>
+          </div>
+          <div>
+            <button class="Invite-btn" type="Submit">Invite User</button>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+
+        <div class="cards">
+          <div class="card-1">
+            <div class="card-1-info">
+              <p>Import data into Front Dashboard</p>
+            </div>
+            <div class="card-1-info">
+              <p>
+                See and talk to your users and leads immediately by importing
+                your data into the Front Dashboard platform.
+              </p>
+              <h4>Import users from:</h4>
+            </div>
+            <div class="card-1-info-1">
+              <div>
+                <img
+                  src="https://htmlstream.com/preview/front-dashboard-v2.0/assets/svg/brands/capsule-icon.svg"
+                  alt=""
+                  width="32.66"
+                  height="24"
+                />
+              </div>
+              <div>
+                Capsule
+              </div>
+              <div>
+                <button class="Invite-btn" type="Submit">
+                  Launch importer
+                </button>
+              </div>
+            </div>
+            <div class="card-1-info-1">
+              <div>
+                <img
+                  src="https://htmlstream.com/preview/front-dashboard-v2.0/assets/svg/brands/mailchimp-icon.svg"
+                  alt=""
+                  width="32.66"
+                  height="24"
+                />
+              </div>
+              <div>
+                Mailchimp
+              </div>
+              <div>
+                <button class="Invite-btn" type="Submit">
+                  Launch importer
+                </button>
+              </div>
+            </div>
+            <div class="card-1-info-1">
+              <div>
+                <img
+                  src="https://htmlstream.com/preview/front-dashboard-v2.0/assets/svg/brands/google-webdev-icon.svg"
+                  alt=""
+                  width="32.66"
+                  height="24"
+                />
+              </div>
+              <div>
+                Webdev
+              </div>
+              <div>
+                <button class="Invite-btn" type="Submit">
+                  Launch importer
+                </button>
+              </div>
+            </div>
+            <div>
+              
+                Or you can sync data to Front Dashboard to ensure your data is always up-to-date.
+              
+            </div>
+            
+
+          </div>
+          <div class="card-2">
+            <div >
+              Hello
+            </div>
+            <div id="chart">
+              <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+            </div>
+          </div>
+        </div>
+        
+        <table class="table-styling">
+          <tr class="table-head">
+            <th class ="table-header-text" >FULL NAME</th>
+            <th class ="table-header-text" >STATUS</th>
+            <th class ="table-header-text" >TYPE</th>
+            <th class ="table-header-text" >EMAIL</th>
+            <th class ="table-header-text" >SIGNUP</th>
+            <th class ="table-header-text" >USER ID</th>
+          </tr>
+          <tr>
+            <td class="user-name-text">
+              <img class="user-logo" src="https://htmlstream.com/preview/front-dashboard-v2.0/assets/img/160x160/img9.jpg" alt="" width="38.5px"
+                height="38.5px"> Amanda Harvey
+            </td>
+            <td class=table-data-text>Succesfull</td>
+            <td class=table-data-text>Unassigned</td>
+            <td class=table-data-text>amanda@site.com</td>
+            <td class=table-data-text>1 year ago</td>
+            <td class=table-data-text>67989</td>
+          </tr>
+          <tr>
+            <td class="user-name-text">
+              <img class="user-logo"src="https://htmlstream.com/preview/front-dashboard-v2.0/assets/img/160x160/img9.jpg" alt="" width="38.5px"
+              height="38.5px">Amanda Harvey
+            </td>
+            <td class=table-data-text>Succesfull</td>
+            <td class=table-data-text>Unassigned</td>
+            <td class=table-data-text>amanda@site.com</td>
+            <td class=table-data-text>1 year ago</td>
+            <td class=table-data-text>67989</td>
+          </tr>
+          <tr>
+            <td class="user-name-text">
+              <img class="user-logo" src="https://htmlstream.com/preview/front-dashboard-v2.0/assets/img/160x160/img9.jpg" alt="" width="38.5px">
+              Amanda Harvey
+            </td>
+            <td class=table-data-text>Succesfull</td>
+            <td class=table-data-text>Unassigned</td>
+            <td class=table-data-text>amanda@site.com</td>
+            <td class=table-data-text>1 year ago</td>
+            <td class=table-data-text>67989</td>
+          </tr>
+          <tr>
+            <td class="user-name-text">               
+              <img class="user-logo" src="https://htmlstream.com/preview/front-dashboard-v2.0/assets/img/160x160/img9.jpg" alt="" width="38.5px">
+               Amanda Harvey
+            </td>
+            <td class=table-data-text>Succesfull</td>
+            <td class=table-data-text>Unassigned</td>
+            <td class=table-data-text>amanda@site.com</td>
+            <td class=table-data-text>1 year ago</td>
+            <td class=table-data-text>67989</td>
+          </tr>
+          <tr>
+            <td class="user-name-text">
+              <img class="user-logo" src="https://htmlstream.com/preview/front-dashboard-v2.0/assets/img/160x160/img9.jpg" alt="" width="38.5px">
+              Amanda Harvey
+            </td>
+            <td class=table-data-text>Succesfull</td>
+            <td class=table-data-text>Unassigned</td>
+            <td class=table-data-text>amanda@site.com</td>
+            <td class=table-data-text>1 year ago</td>
+            <td class=table-data-text>67989</td>
+          </tr>
+          <tr>
+            <td class="user-name-text">
+              <img class="user-logo"src="https://htmlstream.com/preview/front-dashboard-v2.0/assets/img/160x160/img9.jpg" alt="" width="38.5px">
+              Amanda Harvey
+            </td>
+            <td class=table-data-text>Succesfull</td>
+            <td class=table-data-text>Unassigned</td>
+            <td class=table-data-text>amanda@site.com</td>
+            <td class=table-data-text>1 year ago</td>
+            <td class=table-data-text>67989</td>
+          </tr>
+          <tr>
+            <td class="user-name-text">
+              <img class="user-logo" src="https://htmlstream.com/preview/front-dashboard-v2.0/assets/img/160x160/img9.jpg" alt="" width="38.5px">
+              Amanda Harvey
+            </td>
+            <td class=table-data-text>Succesfull</td>
+            <td class=table-data-text>Unassigned</td>
+            <td class=table-data-text>amanda@site.com</td>
+            <td class=table-data-text>1 year ago</td>
+            <td class=table-data-text>67989</td>
+          </tr>
+          <tr>
+            <td class="user-name-text">
+              <img class="user-logo" src="https://htmlstream.com/preview/front-dashboard-v2.0/assets/img/160x160/img9.jpg" alt="" width="38.5px">
+              Amanda Harvey
+            </td>
+            <td class=table-data-text>Succesfull</td>
+            <td class=table-data-text>Unassigned</td>
+            <td class=table-data-text>amanda@site.com</td>
+            <td class=table-data-text>1 year ago</td>
+            <td class=table-data-text>67989</td>
+          </tr>
+        </table>
+    <div class="cards">
+      <div class="card-3">
+        <div class="card-3-info">
+          <h2>Transcation
+          </h2>
+          <p><input class="btn" type="datetime-local"placeholder="Date and time" required name= "date" value="2022-05-27T20:00"></p>
+        </div>
+
+      </div>
+      <div class="card-4">
+        <div class="card-4-info">
+          <h3>
+            Reports Overview
+          </h3>
+           
+        </div>
+
+      </div>
+
+    </div>
+      </div>
+    </div>
+
+  </body>
+  <script>
+    var xyValues = [
+      {x:50, y:7},
+      {x:60, y:8},
+      {x:70, y:8},
+      {x:80, y:9},
+      {x:90, y:9},
+      {x:100, y:9},
+      {x:110, y:10},
+      {x:120, y:11},
+      {x:130, y:14},
+      {x:140, y:14},
+      {x:150, y:15}
+    ];
+    
+    new Chart("myChart", {
+      type: "scatter",
+      data: {
+        datasets: [{
+          pointRadius: 4,
+          pointBackgroundColor: "rgb(0,0,255)",
+          data: xyValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        scales: {
+          xAxes: [{ticks: {min: 40, max:160}}],
+          yAxes: [{ticks: {min: 6, max:16}}],
+        }
+      }
+    });
+    </script>
+ 
+</html>
