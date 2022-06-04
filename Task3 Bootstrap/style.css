@@ -1,13 +1,19 @@
-/* *{
-    margin: 0%;
+*{
+    margin-left: 0%;
     padding: 0%;
-} */
+    box-sizing: border-box;
+}
 .header{
     height: 100vh;
 }
 .navbar-style{
     box-shadow: 0px 5px 10px #efefef;
     text-transform: uppercase;
+    
+}
+.row{
+    margin-left: 0% !important;
+    margin-right: 0% !important;
 }
 .logo{
     height: 48px;
@@ -19,10 +25,16 @@
 li a{
     color: #333;
 }
+.h1-style{
+    text-align: center;
+    color: coral;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
 .big-text{
     font-size: 48px;
-    margin: 0 20px;
+    /* margin: 0 20px; */
     color: darkorchid;
+    text-shadow: 2px 2px 4px #000000
 }
 a.btn{
     width: 150px;
@@ -33,23 +45,33 @@ a.btn{
 a.btn-first{
     background-color: transparent;
     border: 1px solid darkblue;
-    /* color: #fff; */
+   
 } 
 
 a.btn-second{
     background-color: transparent;
     border: 1px solid darkblue;
-    /* color: #fff; */
+    
 }
 a.btn:hover {
     background-color: #4267B2;
-    /* border: 1px solid darkblue; */
-    /* color: #fff; */
     box-shadow: 5px 5px 10px #999;
     transform: 0.3s;
 }
-.banner-info , .banner-image{
-    margin: 30px 0px;
-     
+/* .banner-info , .banner-image{
+    margin: 50px 0px;
+     padding-left: 30px;
 
+} */
+.custom-row{
+    /* height: 400px !important; */
+    background-color :white !important;
+    padding-top: 24px;
+    
+}
+.product-style{
+    color: blueviolet;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+    font-size: 48px;
 }
